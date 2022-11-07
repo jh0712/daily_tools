@@ -61,7 +61,7 @@ return [
 
     'providers' => [
         'users' => [
-            'driver' => 'eloquent',
+            'driver' => 'redis-user',
             'model' => App\Models\User::class,
         ],
 

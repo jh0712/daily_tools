@@ -1,0 +1,29 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Modules\System\Repositories\Repository;
+use Modules\$MODULES_NAME$\Entities\$MODEL$;
+use Modules\$MODULES_NAME$\Contracts\$CONTRACT$Contract;
+
+class $MODEL_NAME$Repository extends Repository implements $MODEL_NAME$Contract
+{
+
+    /**
+     * The model.
+     *
+     * @var unknown
+     */
+    protected $model;
+
+    /**
+     * Class constructor.
+     *
+     * @param DepositCryptoTransfer  $model
+     */
+    public function __construct($MODEL_NAME$ $model)
+    {
+        $this->model = $model;
+        parent::__construct($model);
+    }
+}

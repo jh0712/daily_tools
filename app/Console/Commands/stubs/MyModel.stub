@@ -1,0 +1,37 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class $MODEL_NAME$ extends Model
+{
+    use SoftDeletes;
+    protected $fillable = [
+    ];
+
+    /**
+     * This model's relation to user status histories.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+
+    /**
+     * Get the state id
+     * @return mixed
+     */
+    public function getEntityId()
+    {
+        // return $this->id;
+    }
+
+    /**
+     * Get the foreign key
+     * @return string
+     */
+    public function getForeignKey()
+    {
+        // return 'client_deposit_id';
+    }
+}
